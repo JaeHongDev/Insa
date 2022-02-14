@@ -31,10 +31,13 @@ namespace pjhInsa
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.코드관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GroupCodeToolTip = new System.Windows.Forms.ToolStripMenuItem();
+            this.UnitCodeToolTip = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.설정ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.bottomPannel = new System.Windows.Forms.Panel();
             this.sideMenu = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -45,16 +48,16 @@ namespace pjhInsa
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pageViewr.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -64,25 +67,44 @@ namespace pjhInsa
             this.코드관리ToolStripMenuItem,
             this.toolStripMenuItem1,
             this.도움말ToolStripMenuItem,
-            this.설정ToolStripMenuItem});
+            this.설정ToolStripMenuItem,
+            this.toolStripComboBox1});
             this.menuStrip1.Location = new System.Drawing.Point(81, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1068, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1068, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 코드관리ToolStripMenuItem
             // 
+            this.코드관리ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.GroupCodeToolTip,
+            this.UnitCodeToolTip});
+            this.코드관리ToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.코드관리ToolStripMenuItem.Name = "코드관리ToolStripMenuItem";
-            this.코드관리ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.코드관리ToolStripMenuItem.Size = new System.Drawing.Size(67, 23);
             this.코드관리ToolStripMenuItem.Text = "코드관리";
+            // 
+            // GroupCodeToolTip
+            // 
+            this.GroupCodeToolTip.Name = "GroupCodeToolTip";
+            this.GroupCodeToolTip.Size = new System.Drawing.Size(150, 22);
+            this.GroupCodeToolTip.Tag = "GroupCode";
+            this.GroupCodeToolTip.Text = "그룹코드 관리";
+            // 
+            // UnitCodeToolTip
+            // 
+            this.UnitCodeToolTip.Name = "UnitCodeToolTip";
+            this.UnitCodeToolTip.Size = new System.Drawing.Size(150, 22);
+            this.UnitCodeToolTip.Tag = "UnitCode";
+            this.UnitCodeToolTip.Text = "단위코드 관리";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(91, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(91, 23);
             this.toolStripMenuItem1.Text = "인사업무관리";
             // 
             // toolStripMenuItem2
@@ -94,14 +116,20 @@ namespace pjhInsa
             // 도움말ToolStripMenuItem
             // 
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(55, 23);
             this.도움말ToolStripMenuItem.Text = "도움말";
             // 
             // 설정ToolStripMenuItem
             // 
             this.설정ToolStripMenuItem.Name = "설정ToolStripMenuItem";
-            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(43, 23);
             this.설정ToolStripMenuItem.Text = "설정";
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
+            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.ToolStripComboBox1_SelectedIndexChanged);
             // 
             // bottomPannel
             // 
@@ -217,6 +245,18 @@ namespace pjhInsa
             this.panel1.Size = new System.Drawing.Size(701, 498);
             this.panel1.TabIndex = 2;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox2.Image = global::pjhInsa.Properties.Resources.logoimage;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 383);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(701, 115);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -229,18 +269,6 @@ namespace pjhInsa
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox2.Image = global::pjhInsa.Properties.Resources.logoimage;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 383);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(701, 115);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // Form2
             // 
@@ -258,8 +286,8 @@ namespace pjhInsa
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -283,5 +311,8 @@ namespace pjhInsa
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ToolStripMenuItem GroupCodeToolTip;
+        private System.Windows.Forms.ToolStripMenuItem UnitCodeToolTip;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
     }
 }

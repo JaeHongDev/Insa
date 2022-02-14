@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace pjhInsa.Util
 {
-    public partial class CodeGroupTask : UserControl,IUc
+    public partial class CodeGroupTask : UserControl, IUc
     {
+        public string TaskName { get => this.Name; }
+        public UserControl uc
+        {
+            get => uc;
+            set => uc = value;
+        }
         public CodeGroupTask()
         {
             InitializeComponent();

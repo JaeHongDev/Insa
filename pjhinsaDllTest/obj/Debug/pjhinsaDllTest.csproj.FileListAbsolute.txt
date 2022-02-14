@@ -1,0 +1,6 @@
+C:\Users\lg\Desktop\Insa\pjhinsaDllTest\bin\Debug\pjhinsaDllTest.dll
+C:\Users\lg\Desktop\Insa\pjhinsaDllTest\bin\Debug\pjhinsaDllTest.pdb
+C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.csprojAssemblyReference.cache
+C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.csproj.CoreCompileInputs.cache
+C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.dll
+C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.pdb

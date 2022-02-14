@@ -10,23 +10,24 @@ using System.Windows.Forms;
 
 namespace pjhInsa.Util
 {
-    public interface IUc {
+    public interface IUc
+    {
         void insert();
+        string TaskName { get; }
+        UserControl uc { get; set; }
     }
     public partial class CombinePresentTaskForm : Form
     {
         private IUc uc = null;
-        public CombinePresentTaskForm()
+        public string TaskName { get; }
+
+        public CombinePresentTaskForm(object unitCodeTask)
         {
             InitializeComponent();
-            
-            CodeGroupTask codeGroupTask = new CodeGroupTask();
-            uc = codeGroupTask;
-
-
-
-            codeGroupTask.Dock = DockStyle.Fill;
-            this.viewer.Controls.Add(codeGroupTask);
+            this.TaskName = ((UserControl)unitCodeTask).Name;
+            uc = (IUc)unitCodeTask;
+            ((UserControl)unitCodeTask).Dock = DockStyle.Fill;
+            this.viewer.Controls.Add(((UserControl)unitCodeTask));
 
             this.customButtonProvider1.setPresetTask(this);
         }

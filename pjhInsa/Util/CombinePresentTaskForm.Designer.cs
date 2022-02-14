@@ -30,9 +30,9 @@ namespace pjhInsa.Util
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.customButtonProvider1 = new pjhInsa.Util.CustomButtonProvider();
             this.panel1 = new System.Windows.Forms.Panel();
             this.viewer = new System.Windows.Forms.Panel();
-            this.customButtonProvider1 = new pjhInsa.Util.CustomButtonProvider();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@ namespace pjhInsa.Util
             this.tableLayoutPanel1.Controls.Add(this.viewer, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -54,25 +54,6 @@ namespace pjhInsa.Util
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 414);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 36);
-            this.panel1.TabIndex = 1;
-            // 
-            // viewer
-            // 
-            this.viewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewer.Location = new System.Drawing.Point(20, 68);
-            this.viewer.Margin = new System.Windows.Forms.Padding(20);
-            this.viewer.Name = "viewer";
-            this.viewer.Size = new System.Drawing.Size(760, 326);
-            this.viewer.TabIndex = 2;
             // 
             // customButtonProvider1
             // 
@@ -83,6 +64,27 @@ namespace pjhInsa.Util
             this.customButtonProvider1.Name = "customButtonProvider1";
             this.customButtonProvider1.Size = new System.Drawing.Size(800, 48);
             this.customButtonProvider1.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(245)))), ((int)(((byte)(251)))));
+            this.panel1.Location = new System.Drawing.Point(0, 414);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 36);
+            this.panel1.TabIndex = 1;
+            // 
+            // viewer
+            // 
+            this.viewer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.viewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewer.Location = new System.Drawing.Point(20, 68);
+            this.viewer.Margin = new System.Windows.Forms.Padding(20);
+            this.viewer.Name = "viewer";
+            this.viewer.Size = new System.Drawing.Size(760, 326);
+            this.viewer.TabIndex = 2;
             // 
             // CombinePresentTaskForm
             // 

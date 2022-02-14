@@ -107,6 +107,13 @@
     <Compile Include="Util\CustomButtonProvider.Designer.cs">
       <DependentUpon>CustomButtonProvider.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\MenuRepository.cs" />
+    <Compile Include="Util\UnitCodeTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Util\UnitCodeTask.Designer.cs">
+      <DependentUpon>UnitCodeTask.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Util\CustomButtonProvider.resx">
       <DependentUpon>CustomButtonProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\UnitCodeTask.resx">
+      <DependentUpon>UnitCodeTask.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>

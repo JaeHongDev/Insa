@@ -13,10 +13,38 @@ namespace pjhInsa
 {
     public partial class Form2 : Form
     {
+        private MenuRepository menuRepository;
+        private string VisibleState = "M";
+        public class CItem
+        {
+            public string Text { get; set; }
+            public string Value { get; set; }
+        }
         public Form2()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
+            BindingList<CItem> typeList = new BindingList<CItem>();
+            typeList.Add(new CItem { Text = "다중 화면 사용", Value = "M" });
+            typeList.Add(new CItem { Text = "단일 화면 사용", Value = "S" });
+            toolStripComboBox1.ComboBox.DataSource = typeList;
+            toolStripComboBox1.ComboBox.DisplayMember = "Text";
+            toolStripComboBox1.ComboBox.ValueMember = "Value";
+
+
+            this.GroupCodeToolTip.Click += new System.EventHandler(this.ToolTip_Click);
+            this.UnitCodeToolTip.Click += new System.EventHandler(this.ToolTip_Click);
+
+            this.setLayOutDesigner();
+            this.menuRepository = new MenuRepository();
+
+            this.menuRepository.Insert(new Menus() { Id = "GroupCode", Name = "CodeGroupTask", uc = new CodeGroupTask() });
+            this.menuRepository.Insert(new Menus() { Id = "UnitCode", Name = "UnitCodeTask", uc = new UnitCodeTask() });
+        }
+
+
+        private void setLayOutDesigner()
+        {
             menuStrip1.BackColor = Color.FromArgb(243, 243, 243);
             menuStrip1.ForeColor = Color.FromArgb(123, 123, 123);
 
@@ -27,9 +55,58 @@ namespace pjhInsa
             bottomPannel.ForeColor = Color.FromArgb(235, 245, 251);
 
             pageViewr.BackColor = Color.FromArgb(255, 255, 255);
+        }
 
-         
+        private List<CombinePresentTaskForm> storedCombinePresentTaskForms = new List<CombinePresentTaskForm>();
 
+        private void ToolTip_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem toolTip = (ToolStripMenuItem)sender;
+            Menus task = this.menuRepository.FindById(toolTip.Tag.ToString());
+            if (task is null)
+            {
+                MessageBox.Show("해당 메뉴가 존재하지 않습니다");
+                return;
+            }
+
+            CombinePresentTaskForm findCombinePresentTaskForm =
+                storedCombinePresentTaskForms.Find(form => form.TaskName == task.uc.Name);
+            if (findCombinePresentTaskForm is null)
+            {
+                Type t = Type.GetType($"pjhInsa.Util.{task.Name}");
+                Console.WriteLine(task.uc.GetHashCode());
+                CombinePresentTaskForm combinePresentTaskForm = new CombinePresentTaskForm((UserControl)Activator.CreateInstance(t));
+                if (VisibleState.Equals("M"))
+                {
+                    combinePresentTaskForm.Show();
+                }
+                if (VisibleState.Equals("S"))
+                {
+                    combinePresentTaskForm.ShowDialog();
+                }
+                storedCombinePresentTaskForms.Add(combinePresentTaskForm);
+                combinePresentTaskForm.FormClosed += new FormClosedEventHandler(FormClosed);
+                void FormClosed(object sender1, FormClosedEventArgs e1)
+                {
+                    storedCombinePresentTaskForms.Remove((CombinePresentTaskForm)sender1);
+                }
+                return;
+            }
+            findCombinePresentTaskForm.Focus();
+
+        }
+
+        private void UnitCodeToolTip_Click(object sender, EventArgs e)
+        {
+            CombinePresentTaskForm combinePresentTaskForm = new CombinePresentTaskForm(unitCodeTask: new UnitCodeTask());
+            combinePresentTaskForm.Show();
+
+            storedCombinePresentTaskForms.Add(combinePresentTaskForm);
+        }
+
+        private void ToolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.VisibleState = ((CItem)toolStripComboBox1.ComboBox.SelectedItem).Value;
         }
     }
 }
