@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pjhInsa.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,15 +11,15 @@ using System.Windows.Forms;
 
 namespace pjhInsa
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
 
             menuStrip1.BackColor = Color.FromArgb(243, 243, 243);
             menuStrip1.ForeColor = Color.FromArgb(123, 123, 123);
-           
+
             sideMenu.BackColor = Color.FromArgb(44, 44, 44);
             sideMenu.ForeColor = Color.FromArgb(123, 123, 123);
 
@@ -27,10 +28,8 @@ namespace pjhInsa
 
             pageViewr.BackColor = Color.FromArgb(255, 255, 255);
 
-        }
+         
 
-        private void sideMenu_Paint(object sender, PaintEventArgs e)
-        {
         }
     }
 }

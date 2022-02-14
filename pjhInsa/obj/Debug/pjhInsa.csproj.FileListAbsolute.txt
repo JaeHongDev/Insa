@@ -2,7 +2,6 @@ C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\bin\Debug\pjhInsa.exe.config
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\bin\Debug\pjhInsa.exe
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\bin\Debug\pjhInsa.pdb
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.csproj.AssemblyReference.cache
-C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Form1.resources
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Properties.Resources.resources
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.csproj.GenerateResource.cache
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.csproj.CoreCompileInputs.cache
@@ -27,5 +26,8 @@ C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\bin\Debug\System.Text.Encodings.W
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\bin\Debug\System.Text.Json.xml
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\bin\Debug\System.ValueTuple.xml
-C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Util.TestForm.resources
 C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.csproj.CopyComplete
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Form2.resources
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Util.CodeGroupTask.resources
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Util.CustomButtonProvider.resources
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Util.CombinePresentTaskForm.resources
