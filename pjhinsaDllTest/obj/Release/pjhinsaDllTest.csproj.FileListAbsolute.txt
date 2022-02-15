@@ -1,0 +1,8 @@
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\bin\Release\pjhinsaDllTest.dll
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\bin\Release\pjhinsaDllTest.pdb
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Release\pjhinsaDllTest.csproj.AssemblyReference.cache
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Release\pjhinsaDllTest.UserControl1.resources
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Release\pjhinsaDllTest.csproj.GenerateResource.cache
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Release\pjhinsaDllTest.csproj.CoreCompileInputs.cache
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Release\pjhinsaDllTest.dll
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Release\pjhinsaDllTest.pdb

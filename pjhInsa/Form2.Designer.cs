@@ -30,11 +30,11 @@ namespace pjhInsa
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.코드관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.codeMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupCodeToolTip = new System.Windows.Forms.ToolStripMenuItem();
             this.UnitCodeToolTip = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.taskMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.codeMenuStrip1 = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.설정ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
@@ -50,6 +50,7 @@ namespace pjhInsa
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dllTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pageViewr.SuspendLayout();
@@ -64,8 +65,8 @@ namespace pjhInsa
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.menuStrip1, 2);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.코드관리ToolStripMenuItem,
-            this.toolStripMenuItem1,
+            this.codeMenuStrip,
+            this.taskMenuStrip,
             this.도움말ToolStripMenuItem,
             this.설정ToolStripMenuItem,
             this.toolStripComboBox1});
@@ -75,43 +76,45 @@ namespace pjhInsa
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // 코드관리ToolStripMenuItem
+            // codeMenuStrip
             // 
-            this.코드관리ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.codeMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GroupCodeToolTip,
-            this.UnitCodeToolTip});
-            this.코드관리ToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.코드관리ToolStripMenuItem.Name = "코드관리ToolStripMenuItem";
-            this.코드관리ToolStripMenuItem.Size = new System.Drawing.Size(67, 23);
-            this.코드관리ToolStripMenuItem.Text = "코드관리";
+            this.UnitCodeToolTip,
+            this.dllTestToolStripMenuItem});
+            this.codeMenuStrip.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.codeMenuStrip.Name = "codeMenuStrip";
+            this.codeMenuStrip.Size = new System.Drawing.Size(67, 23);
+            this.codeMenuStrip.Tag = "code";
+            this.codeMenuStrip.Text = "코드관리";
             // 
             // GroupCodeToolTip
             // 
             this.GroupCodeToolTip.Name = "GroupCodeToolTip";
-            this.GroupCodeToolTip.Size = new System.Drawing.Size(150, 22);
+            this.GroupCodeToolTip.Size = new System.Drawing.Size(180, 22);
             this.GroupCodeToolTip.Tag = "GroupCode";
             this.GroupCodeToolTip.Text = "그룹코드 관리";
             // 
             // UnitCodeToolTip
             // 
             this.UnitCodeToolTip.Name = "UnitCodeToolTip";
-            this.UnitCodeToolTip.Size = new System.Drawing.Size(150, 22);
+            this.UnitCodeToolTip.Size = new System.Drawing.Size(180, 22);
             this.UnitCodeToolTip.Tag = "UnitCode";
             this.UnitCodeToolTip.Text = "단위코드 관리";
             // 
-            // toolStripMenuItem1
+            // taskMenuStrip
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(91, 23);
-            this.toolStripMenuItem1.Text = "인사업무관리";
+            this.taskMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.codeMenuStrip1});
+            this.taskMenuStrip.Name = "taskMenuStrip";
+            this.taskMenuStrip.Size = new System.Drawing.Size(91, 23);
+            this.taskMenuStrip.Text = "인사업무관리";
             // 
-            // toolStripMenuItem2
+            // codeMenuStrip1
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(182, 22);
-            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
+            this.codeMenuStrip1.Name = "codeMenuStrip1";
+            this.codeMenuStrip1.Size = new System.Drawing.Size(182, 22);
+            this.codeMenuStrip1.Text = "toolStripMenuItem2";
             // 
             // 도움말ToolStripMenuItem
             // 
@@ -270,6 +273,13 @@ namespace pjhInsa
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // dllTestToolStripMenuItem
+            // 
+            this.dllTestToolStripMenuItem.Name = "dllTestToolStripMenuItem";
+            this.dllTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dllTestToolStripMenuItem.Tag = "DLLTest";
+            this.dllTestToolStripMenuItem.Text = "dll test";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -298,11 +308,11 @@ namespace pjhInsa
         private System.Windows.Forms.Panel bottomPannel;
         private System.Windows.Forms.Panel pageViewr;
         private System.Windows.Forms.Panel sideMenu;
-        private System.Windows.Forms.ToolStripMenuItem 코드관리ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem codeMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem taskMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 설정ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem codeMenuStrip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
@@ -314,5 +324,6 @@ namespace pjhInsa
         private System.Windows.Forms.ToolStripMenuItem GroupCodeToolTip;
         private System.Windows.Forms.ToolStripMenuItem UnitCodeToolTip;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.ToolStripMenuItem dllTestToolStripMenuItem;
     }
 }

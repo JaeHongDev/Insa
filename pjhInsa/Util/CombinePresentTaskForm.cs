@@ -21,14 +21,12 @@ namespace pjhInsa.Util
         private IUc uc = null;
         public string TaskName { get; }
 
-        public CombinePresentTaskForm(object unitCodeTask)
+        public CombinePresentTaskForm(UserControl unitCodeTask)
         {
             InitializeComponent();
-            this.TaskName = ((UserControl)unitCodeTask).Name;
-            uc = (IUc)unitCodeTask;
-            ((UserControl)unitCodeTask).Dock = DockStyle.Fill;
-            this.viewer.Controls.Add(((UserControl)unitCodeTask));
-
+            this.TaskName = unitCodeTask.Name;
+            unitCodeTask.Dock = DockStyle.Fill;
+            this.viewer.Controls.Add(unitCodeTask);
             this.customButtonProvider1.setPresetTask(this);
         }
 

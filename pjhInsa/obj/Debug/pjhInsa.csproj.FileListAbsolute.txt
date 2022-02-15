@@ -65,3 +65,7 @@ C:\Users\lg\Desktop\Insa\pjhInsa\obj\Debug\pjhInsa.csproj.CopyComplete
 C:\Users\lg\Desktop\Insa\pjhInsa\obj\Debug\pjhInsa.exe
 C:\Users\lg\Desktop\Insa\pjhInsa\obj\Debug\pjhInsa.pdb
 C:\Users\lg\Desktop\Insa\pjhInsa\obj\Debug\pjhInsa.Util.UnitCodeTask.resources
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhInsa\obj\Debug\pjhInsa.Util.UnitCodeTask.resources
+C:\Users\MTPC4-06\source\repos\pjhInsa\debug\pjhInsa.exe.config
+C:\Users\MTPC4-06\source\repos\pjhInsa\debug\pjhInsa.exe
+C:\Users\MTPC4-06\source\repos\pjhInsa\debug\pjhInsa.pdb

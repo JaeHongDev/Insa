@@ -4,3 +4,11 @@ C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.csprojAssemblyR
 C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.csproj.CoreCompileInputs.cache
 C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.dll
 C:\Users\lg\Desktop\Insa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.pdb
+C:\Users\MTPC4-06\source\repos\pjhInsa\debug\pjhinsaDllTest.dll
+C:\Users\MTPC4-06\source\repos\pjhInsa\debug\pjhinsaDllTest.pdb
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.csproj.AssemblyReference.cache
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.csproj.CoreCompileInputs.cache
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.dll
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.pdb
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.UserControl1.resources
+C:\Users\MTPC4-06\source\repos\pjhInsa\pjhinsaDllTest\obj\Debug\pjhinsaDllTest.csproj.GenerateResource.cache

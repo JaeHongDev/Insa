@@ -15,12 +15,13 @@ namespace pjhInsa.Util
         public UnitCodeTask()
         {
             InitializeComponent();
+
         }
 
         public string TaskName => throw new NotImplementedException();
 
         UserControl uc {
-            get => uc;
+            get => uc;  
             set => uc = value;
         }
         UserControl IUc.uc {
@@ -39,5 +40,6 @@ namespace pjhInsa.Util
         {
             throw new NotImplementedException();
         }
+
     }
 }

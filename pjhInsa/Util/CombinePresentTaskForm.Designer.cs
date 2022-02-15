@@ -30,9 +30,9 @@ namespace pjhInsa.Util
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.customButtonProvider1 = new pjhInsa.Util.CustomButtonProvider();
             this.panel1 = new System.Windows.Forms.Panel();
             this.viewer = new System.Windows.Forms.Panel();
+            this.customButtonProvider1 = new pjhInsa.Util.CustomButtonProvider();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,16 +55,6 @@ namespace pjhInsa.Util
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // customButtonProvider1
-            // 
-            this.customButtonProvider1.BackColor = System.Drawing.Color.White;
-            this.customButtonProvider1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customButtonProvider1.Location = new System.Drawing.Point(0, 0);
-            this.customButtonProvider1.Margin = new System.Windows.Forms.Padding(0);
-            this.customButtonProvider1.Name = "customButtonProvider1";
-            this.customButtonProvider1.Size = new System.Drawing.Size(800, 48);
-            this.customButtonProvider1.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
@@ -86,6 +76,16 @@ namespace pjhInsa.Util
             this.viewer.Size = new System.Drawing.Size(760, 326);
             this.viewer.TabIndex = 2;
             // 
+            // customButtonProvider1
+            // 
+            this.customButtonProvider1.BackColor = System.Drawing.Color.White;
+            this.customButtonProvider1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customButtonProvider1.Location = new System.Drawing.Point(0, 0);
+            this.customButtonProvider1.Margin = new System.Windows.Forms.Padding(0);
+            this.customButtonProvider1.Name = "customButtonProvider1";
+            this.customButtonProvider1.Size = new System.Drawing.Size(800, 48);
+            this.customButtonProvider1.TabIndex = 0;
+            // 
             // CombinePresentTaskForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -94,6 +94,7 @@ namespace pjhInsa.Util
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "CombinePresentTaskForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CombinePresentTaskForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
